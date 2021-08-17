@@ -1,8 +1,6 @@
 package com.github.luisacpaim.citiesapi.cities;
 
 
-import com.github.luisacpaim.citiesapi.countries.Country;
-import com.github.luisacpaim.citiesapi.states.State;
 import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;
 import org.hibernate.annotations.TypeDefs;
@@ -74,7 +72,7 @@ public class City {
         return geolocation;
     }
 
-   /* public Point getLocation() {
+    public Point getLocation() {
         return location;
-    }*/
+    }
 }
