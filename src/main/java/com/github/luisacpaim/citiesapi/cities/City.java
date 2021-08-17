@@ -11,7 +11,7 @@ import java.awt.*;
 @Entity
 @Table(name = "cidade")
 @TypeDefs(value = {
-        @TypeDef(name = "point", typeClass = PointType2.class)
+        @TypeDef(name = "point", typeClass = PointType.class)
 })
 
 public class City {
@@ -30,10 +30,6 @@ public class City {
     @Column(name = "lat_lon")
     private String geolocation;
 
-   /* @ManyToOne
-    @JoinColumn(name = "estado", referencedColumnName = "id")
-    private State state;*/
-
     // 2nd
     @Type(type = "point")
     @Column(name = "lat_lon", updatable = false, insertable = false)
@@ -42,7 +38,7 @@ public class City {
     public City() {
     }
 
-    /*public City(final Long id, final String name, final Integer uf, final Integer ibge,
+    public City(final Long id, final String name, final Integer uf, final Integer ibge,
                 final String geolocation, final Point location) {
         this.id = id;
         this.name = name;
@@ -50,7 +46,7 @@ public class City {
         this.ibge = ibge;
         this.geolocation = geolocation;
         this.location = location;
-    }*/
+    }
 
     public Long getId() {
         return id;
