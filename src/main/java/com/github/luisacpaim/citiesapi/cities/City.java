@@ -8,12 +8,12 @@ import org.hibernate.annotations.TypeDefs;
 import javax.persistence.*;
 import java.awt.*;
 
-@Entity
+
+@Entity(name = "City")
 @Table(name = "cidade")
 @TypeDefs(value = {
         @TypeDef(name = "point", typeClass = PointType.class)
 })
-
 public class City {
 
     @Id
@@ -71,4 +71,5 @@ public class City {
     public Point getLocation() {
         return location;
     }
+
 }

@@ -15,7 +15,6 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/countries")
-
 public class CountryResource {
 
     private CountryRepository repository;
