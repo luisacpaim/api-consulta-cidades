@@ -5,8 +5,10 @@ import org.hibernate.annotations.Type;
 import org.hibernate.annotations.TypeDef;
 import org.hibernate.annotations.TypeDefs;
 
+import org.springframework.data.geo.Point;
+
 import javax.persistence.*;
-import java.awt.*;
+// import java.awt.*;
 
 
 @Entity(name = "City")
